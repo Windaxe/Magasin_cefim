@@ -1,0 +1,99 @@
+/* Style pour magasin page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 10px 16px;
+}
+h1, h2, p, img {
+  margin: 0 0 10px 0;
+  max-width: 100%;
+}
+
+/* main produit style */
+
+.main-product {
+  padding: 20px;
+  margin: 10px 16px 50px 16px; ;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* card container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
+/* card style */
+.card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card button, .card span {
+  flex: 1;
+  text-align: center;
+}
+
+.card button {
+  max-width: 30px;
+}
+
+.card span {
+  color: #000000;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.last-card {
+  margin-bottom: 250px;
+
+}
+
+/* Media Query mobile responsive */
+@media (max-width: 600px) {
+  .card {
+    width: 40%;
+  }
+}
+
+
+@media (min-width: 601px) {
+  .card {
+    width: 48%;
+  }
+}
