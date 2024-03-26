@@ -120,8 +120,10 @@ header h1 {
     text-align: start;
     margin-left: 5%;
     flex-direction: column;
+
     
 }
+
 
 
 
@@ -157,6 +159,10 @@ header h1 {
 
 
 
+}
+
+.result h3 {
+    font-size: 20px;
 }
 
 
