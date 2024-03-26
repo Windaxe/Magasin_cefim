@@ -28,6 +28,14 @@ h1, h2, p, img {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.main-product span {
+  font-weight: bold;
+}
+
+button {
+  background-color: white
+}
+
 /* card container */
 .cards-container {
   display: flex;
@@ -52,6 +60,14 @@ h1, h2, p, img {
 .card button, .card span {
   flex: 1;
   text-align: center;
+}
+
+.card h2 {
+  font-size: 13px;
+}
+
+.card p {
+  font-weight: bold;
 }
 
 .card button {
@@ -79,9 +95,18 @@ footer a {
   text-decoration: none;
 }
 
+footer img {
+  width: 20px;
+}
+
 .last-card {
   margin-bottom: 250px;
 
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
 }
 
 /* Media Query mobile responsive */
