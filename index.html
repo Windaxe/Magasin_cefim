@@ -13,13 +13,13 @@
 
         <div class="card-container">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100">
+                <img class="card-img" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 
                 <div class="card-content">
                     <div class="card-header">
                         <div class="card-title">
-                            <h2>Nom et prénom</h2>
-                            <h3>Poste</h3>
+                            <h2>Jade Tellier</h2>
+                            <h3>Currator</h3>
                         </div>
                         <a href="">
                             <img src="img/pen.svg" alt="Pen icon">
@@ -30,13 +30,13 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100">
+                <img class="card-img" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 
                 <div class="card-content">
                     <div class="card-header">
                         <div class="card-title">
-                            <h2>Nom et prénom</h2>
-                            <h3>Poste</h3>
+                            <h2>Lucas Portler</h2>
+                            <h3>CEO</h3>
                         </div>
                         <a href="">
                             <img src="img/pen.svg" alt="Pen icon">
@@ -47,13 +47,13 @@
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100">
+                <img class="card-img" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 
                 <div class="card-content">
                     <div class="card-header">
                         <div class="card-title">
-                            <h2>Nom et prénom</h2>
-                            <h3>Poste</h3>
+                            <h2>Solène Bast</h2>
+                            <h3>Vendeuse</h3>
                         </div>
                         <a href="">
                             <img src="img/pen.svg" alt="Pen icon">
@@ -72,16 +72,17 @@
         </div>  
         
         <form method="get">
-            <label for="name">Nom, prénom</label>
-            <input type="text" id="name" name="name">
+           
+            <input type="text" id="name" name="name" placeholder="Nom, prénom">
     
-            <label for="poste">Poste actuel</label>
-            <input type="text" id="poste" name="poste">
+            <input type="text" id="poste" name="poste" placeholder="Poste actuel">
     
-            <textarea>Description</textarea>
+            <textarea placeholder="Description"></textarea>
     
-            <button class="cta-form">Modifier le profil</button>
-            <button class="cta-form">Supprimer le profil</button>
+            <div class="cta-form-container">
+                <button class="cta-form">Modifier le profil</button>
+                <button class="cta-form red">Supprimer le profil</button>
+            </div>
         </form>
     </main>
 
