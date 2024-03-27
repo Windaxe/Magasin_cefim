@@ -27,10 +27,59 @@ h3 {
 
 .container {
    
-
+   height: auto;
     margin-left: 20px;
     margin-right: 20px;
     overflow: hidden;
+}
+
+.menu-container {
+    visibility: hidden;
+    
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.menu-item {
+    display: flex;
+    
+    text-decoration: none;
+    align-items: center;
+    
+    right: 0;
+   margin-right: 10%;
+    gap: 20%;
+    
+    
+    margin-top: 2%;
+    
+
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Pour supprimer le soulignement des liens */
+    color: black; /* Couleur du texte */
+   
+}
+
+.menu-item a img {
+    width: 20px; /* Taille de l'image */
+    height: auto; /* Pour maintenir le ratio de l'image */
+    margin-right: 5px; /* Espace entre l'image et le texte */
+}
+
+.menu-item:active {
+    text-decoration: none;
+}
+
+.menu-item:visited{
+    text-decoration: none;
+    color: black;
 }
 
 header {
@@ -96,7 +145,7 @@ header h1 {
 
 .pagebutton {
     height: 38px;
-    width: 200px;
+    width: 165px;
     background-color: transparent;
     border: 1px solid grey;
     border-radius: 5%;
@@ -113,9 +162,7 @@ header h1 {
     
     
     display: flex;
-    position: relative;
-    right: 0;
-    top: 0;
+
 
     
 
@@ -128,7 +175,10 @@ header h1 {
     margin: 2px;
 }
 
-
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .card-item {
     position: relative;
@@ -172,12 +222,20 @@ header h1 {
     
 }
 
+.right-item h1 {
+    font-size: 24px;
+}
+
+.right-item h3 {
+    font-size: 16px;
+}
+
 
 
 
 .substract , .add  {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border: 2px solid grey;
     text-align: center;
     display: flex;
@@ -193,7 +251,7 @@ header h1 {
 .shop-container {
     display: flex; 
     flex-direction: row; 
-    
+    width: 100%;
     position: absolute;
     bottom: 0;
     
@@ -211,6 +269,7 @@ header h1 {
 
 .result h3 {
     font-size: 20px;
+    margin-top: 2px;
 }
 
 
@@ -218,7 +277,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10%;
+    
 }
 
 .total-Button {
@@ -232,7 +291,7 @@ header h1 {
 
 
 .paid-container {
-    margin-top: 10%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,7 +304,7 @@ header h1 {
     justify-content: center;
     background-color: black;
     color: white;
-    margin-bottom: 20px;
+    margin-top: 3%;
 }
 
 #totalPrice {
@@ -257,34 +316,208 @@ header h1 {
 }
 
 
+footer {
+
+    visibility:visible;
+    height: 20px;
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer img {
+    width: 30px;
+  }
+
+
+  @media only screen
+  and (max-device-width: 390px) {
+    
+    .card-item{
+        height: 100px;
+    }
+
+    .left-item img {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        object-position: 25% 25%; 
+        
+    }
+    
+    .left-item {
+        height: 80px;
+        width: 80px;
+        float: left;
+    
+        margin: 10px;
+
+  }
+
+  .right-item h3 {
+    font-size: 14px;
+  }
+
+  .substract, .add, .result {
+    height: 100%;
+    width: 20px;
+
+  }
+
+
+
+  h1{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 15px;
+  }
+
+  .pagebutton {
+    height: 100%;
+    width: 40%;
+  }
+
+  .deleteall {
+    width: 50%;
+  }
+
+
+  }
+
+ 
+
 
 @media only screen
-and (min-device-width: 768px) {
+and (min-device-width: 1024px) {
 
     
+    .container{
+
+        margin-top: 0%;
+
+    }
+    
+    header{
+        margin-top: 5%;
+        margin-right: 10%;
+    }
+    
     .card-item {
-        height: 200px;
-        width: 60%;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 436px;
+        width: 411px;
+        
+        
         align-items: center;
         margin-bottom: 2%;
         
     }
 
-    .card-container {
+    .left-item {
+        width: 391px;
+        height: 244px;
+    }
+
+    .left-item img {
+        width: 391px;
+        height: 244px;
+    }
+
+    .right-item {
         display: flex;
-        flex-direction: column;
+        margin-top: 5%;
+        margin-right: 20%;
+    }
+
+    .card-container {
+       
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+
+    .left-item {
+        display: flex;
+        position: relative;
+        top: 0;
+
+    }
+
+
+
+    .checkout-container {
+       
+        display: flex;
         align-items: center;
     }
 
-    .checkout-container {
-        margin-top: 1%;
+    .downElement-container {
+        width: 100%;
+        position: absolute;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-b; /* Pour espacer les éléments sur la ligne */
+        align-items: center; 
+    }
+
+    .total-Button {
+        margin-top: 5%;
+        width: 500px;
+        height: 51.9px;
+    }
+   
+
+    #totalPrice{
+        
+        width: 100%;
+        
     }
 
     .paid-container {
-        margin-top: 3%;
+        
+        display: flex;
+        justify-content: end;
+        margin-right: 8%;
     }
+
+    .paid-button {
+        margin-top: 2%;
+        margin-bottom: 20%;
+
+       
+        
+
+    }
+
+   
+   
+
+    .menu-container{
+        visibility: visible;
+    }
+
+    footer {
+        visibility: hidden;
+
+    }
+
+
 
 }
 

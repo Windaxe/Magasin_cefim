@@ -7,6 +7,10 @@
     <title>Panier</title>
 </head>
 <body>
+    
+       
+
+    
 
     <div class="popup-container">
         <div class="popup">
@@ -20,11 +24,18 @@
         </div>
     </div>
    
-
-
+   
     <div class="container">
 
+        <div class="menu-container">
+            <div class="menu-item">
+                <a href="#"><img src="IMG/Icons/home.svg" alt="home"><p>Accueil</p></a>
+                <a href="./index.html"><img src="IMG/Icons/user.svg" alt="equipe"><p>Equipe</p></a>
+                <a href="./Panier.html"><img src="IMG/Icons/shopping-cart.svg" alt="shop"><p>Panier</p></a>
+    
+            </div>
         
+        </div>
 
 
         <header>
@@ -32,37 +43,42 @@
         <button class="deleteall pagebutton" type="submit" onclick="popshow()">Supprimer le Panier</button>
          </header>
 
-         <div class="card-container">
-         <div class="card-item">
-            <div class="left-item">
-                <img class="card-image" src="IMG\Product1.PNG">
-            </div>
-            <div class="right-item">
-                <h1 class="article-name"><h1>Torpedo Captor</h1>
-                <h3 class="price" id="item1"><h3></h3>
+    <div class="card-container">
+            <div class="card-item">
+                 <div class="left-item">
+                  <img class="card-image" src="IMG\Product1.PNG">
+                </div>
+                <div class="right-item">
+                    <h1 class="article-name"><h1>Torpedo Captor</h1>
+                    <h3 class="price" id="item1"><h3></h3>
                 <div class="shop-container">
                     <button class="substract" onclick="handleQTY('item1', -1)"><h1>-</h1></button>
-                    <div class="result" ><h3 id="qty1"></h1></div>
+                    <div class="result" ><h3 id="qty1"></h3></div>
                     <button class="add" onclick="handleQTY('item1', 1)"><h1>+</h1></button>
+                </div></div>
+            </div>
+            
+        
+            
+            
+        
+
+
+
+            <div class="card-item">
+                <div class="left-item">
+                    <img class="card-image" src="IMG\Product2.PNG">
                 </div>
-            </div>
-        </div>
+                <div class="right-item">
+                    <h1 class="article-name"><h1>CFM 1,0 FM BK</h1>
+                    <h3 class="price" id="item2"><h3></h3>
+               
 
-
-
-        <div class="card-item">
-            <div class="left-item">
-                <img class="card-image" src="IMG\Product2.PNG">
-            </div>
-            <div class="right-item">
-                <h1 class="article-name"><h1>CFM 1,0 FM BK</h1>
-                <h3 class="price" id="item2"><h3></h3>
-
-           
+            
 
                 <div class="shop-container">
                     <button class="substract" onclick="handleQTY('item2', -1)"><h1>-</h1></button>
-                    <div class="result" ><h3 id="qty2"></h1></div>
+                    <div class="result" ><h3 id="qty2"></h3></div>
                     <button class="add" onclick="handleQTY('item2', 1)"><h1>+</h1></button>
                 </div>
             </div>
@@ -77,33 +93,42 @@
             </div>
             <div class="right-item">
                 <h1 class="article-name"><h1>EVH 5150</h1>
-                <h3 class="price" id="item3"><h3></h3>
+                <h3 class="price" id="item3"><h2></h2>
 
            
 
                 <div class="shop-container">
                     <button class="substract" onclick="handleQTY('item3', -1)"><h1>-</h1></button>
-                    <div class="result" ><h3 id="qty3"></h1></div>
+                    <div class="result" ><h3 id="qty3"></h3></div>
                     <button class="add" onclick="handleQTY('item3', 1)"><h1>+</h1></button>
                 </div>
             </div>
             
+            
 
 
         </div>
-
+    </div>
+    <div class="downElement-container">
         <div class="checkout-container">
             <button class="total-Button pagebutton" onclick="handleCheckout()">Calculer le total</button>
             <h1 id="totalPrice">Total : 0 </h1>
             
     
         </div>
+    </div>
         <div class="paid-container">
             <button class="paid-button pagebutton">Payer</button>
         </div>
-    </div>
-    </div>
+    
+</div>
+    
 
+    <footer>
+        <a href="#"><img src="IMG/Icons/home.svg" alt="home"></a>
+        <a href="./index.html"><img src="IMG/Icons/user.svg" alt="equipe"></a>
+        <a href="./Panier.html"><img src="IMG/Icons/shopping-cart.svg" alt="shop"></a>
+      </footer>
    
    <script src="SRC\panier-script.js"></script>
 
