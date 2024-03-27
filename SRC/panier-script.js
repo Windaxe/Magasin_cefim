@@ -64,6 +64,7 @@ function handleQTY(itemId, change) {
 
         document.getElementById(qtyitem).innerHTML = item.qty;
         item.newprice = item.qty * item.price;
+        document.getElementById(priceitem).innerHTML = item.newprice + "€";
         
 
 
@@ -72,6 +73,7 @@ function handleQTY(itemId, change) {
         item.qty = 1;
         document.getElementById(qtyitem).innerHTML = item.qty;
         item.newprice = item.qty * item.price;
+        document.getElementById(priceitem).innerHTML = item.newprice;
         
     }
 
@@ -111,7 +113,7 @@ function handleDeleteAll(erase){
                 const item = stock[key];
                 item.qty = 0;
                 InnitStock();
-                document.getElementById("totalPrice").innerHTML = "Total : 0";
+                document.getElementById("totalPrice").innerHTML = "Total : 0€";
 
                 popup.style.visibility = "hidden"; 
                 page.style.filter = "blur(0px)";
