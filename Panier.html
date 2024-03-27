@@ -7,14 +7,33 @@
     <title>Panier</title>
 </head>
 <body>
+
+    <div class="popup-container">
+        <div class="popup">
+            <h1>Êtes-vous sure de tout enlever ?</h1>
+        <div class="button-container">
+            <button id="accept-button" onclick="handleDeleteAll(true)">Oui</button>
+            <button id="refuse-button" onclick="handleDeleteAll(false)">Non</button>
+
+        </div>
+            
+        </div>
+    </div>
+   
+
+
     <div class="container">
+
+        
+
+
         <header>
         <h1>Panier</h1>
-        <button class="deleteall pagebutton" type="submit">Supprimer le Panier</button>
+        <button class="deleteall pagebutton" type="submit" onclick="popshow()">Supprimer le Panier</button>
          </header>
 
-         
          <div class="card-container">
+         <div class="card-item">
             <div class="left-item">
                 <img class="card-image" src="IMG\Product1.PNG">
             </div>
@@ -31,7 +50,7 @@
 
 
 
-        <div class="card-container">
+        <div class="card-item">
             <div class="left-item">
                 <img class="card-image" src="IMG\Product2.PNG">
             </div>
@@ -52,7 +71,7 @@
 
         </div>
 
-        <div class="card-container">
+        <div class="card-item">
             <div class="left-item">
                 <img class="card-image" src="IMG\Product3.PNG">
             </div>
@@ -74,11 +93,15 @@
         </div>
 
         <div class="checkout-container">
-            <button class="total-Button pagebutton">Calculer le total</button>
-            <h1>Total : 0 </h1>
+            <button class="total-Button pagebutton" onclick="handleCheckout()">Calculer le total</button>
+            <h1 id="totalPrice">Total : 0 </h1>
             
     
         </div>
+        <div class="paid-container">
+            <button class="paid-button pagebutton">Payer</button>
+        </div>
+    </div>
     </div>
 
    

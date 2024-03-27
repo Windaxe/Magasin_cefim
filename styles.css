@@ -5,6 +5,9 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 
 
@@ -23,8 +26,11 @@ h3 {
 }
 
 .container {
+   
+
     margin-left: 20px;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 header {
@@ -46,8 +52,50 @@ header h1 {
 
 }
 
+.popup-container {
+    visibility: hidden;
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    box-shadow: 10px 0px 50px;
+    
+    background-color: rgba(255, 255, 255, 0.884);
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.popup h1 {
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.popup button {
+    width: 100px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
 .pagebutton {
-    height: 50px;
+    height: 38px;
     width: 200px;
     background-color: transparent;
     border: 1px solid grey;
@@ -82,9 +130,9 @@ header h1 {
 
 
 
-.card-container {
+.card-item {
     position: relative;
-    height: 250px;
+    height: 175px;
     
     display: flex;
     border: 1px solid grey;
@@ -95,7 +143,7 @@ header h1 {
 }
 
 .left-item img {
-    height: 220px;
+    height: 145px;
     width: 150px;
     object-fit: cover;
     object-position: 25% 25%; 
@@ -103,7 +151,7 @@ header h1 {
 }
 
 .left-item {
-    height: 220px;
+    height: 145px;
     width: 150px;
     float: left;
 
@@ -136,7 +184,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     margin: 5px;
-
+    margin-top: 2%;
     background-color: transparent;
 
     
@@ -170,10 +218,11 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10%;
 }
 
 .total-Button {
-   
+   margin-top: 1%;
     margin-left: 10px;
     margin-bottom: 5%;
     border-radius: 4px 0px 0px 0px;
@@ -182,4 +231,60 @@ header h1 {
 }
 
 
+.paid-container {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.paid-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#totalPrice {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    width: auto;
+    height: auto;
+}
+
+
+
+@media only screen
+and (min-device-width: 768px) {
+
+    
+    .card-item {
+        height: 200px;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+        
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .checkout-container {
+        margin-top: 1%;
+    }
+
+    .paid-container {
+        margin-top: 3%;
+    }
+
+}
 
