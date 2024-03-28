@@ -23,6 +23,57 @@ h1, h2, p, img {
   max-width: 100%;
 }
 
+
+.menu-container {
+  visibility: hidden;
+  
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.menu-item {
+  display: flex;
+  
+  text-decoration: none;
+  align-items: center;
+  
+  right: 0;
+ margin-right: 10%;
+  gap: 20%;
+  
+  
+  margin-top: 2%;
+  
+
+}
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Pour supprimer le soulignement des liens */
+  color: black; /* Couleur du texte */
+ 
+}
+
+.menu-item a img {
+  width: 20px; /* Taille de l'image */
+  height: auto; /* Pour maintenir le ratio de l'image */
+  margin-right: 5px; /* Espace entre l'image et le texte */
+}
+
+.menu-item:active {
+  text-decoration: none;
+}
+
+.menu-item:visited{
+  text-decoration: none;
+  color: black;
+}
+
+
 /* main produit style */
 
 .main-product {
@@ -165,6 +216,15 @@ footer img {
   .card img {
     width:40%;
     min-height: auto;
+
+    
+  }
+  .menu-container{
+    visibility: visible;
+  }
+
+  footer{
+    visibility: hidden;
   }
 }
 svg {
