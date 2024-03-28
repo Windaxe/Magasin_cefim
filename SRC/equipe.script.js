@@ -32,6 +32,8 @@ let currentCard = null
 
 // Fonction permettant de récupérer les données de la cards pour les innsérer dans le formulaire
 function showFormWithInfo(n, p, d) {
+    
+    currentCard = document.getElementById(n).closest('.card'); // Stocke la carte actuellement éditée
 
     //Recupération des infos de la card
         const nomEmploye  = document.getElementById(n).textContent;
