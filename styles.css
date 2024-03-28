@@ -164,7 +164,7 @@ header h1 {
     display: flex;
 
 
-    
+    border-radius : 4px 0px 0px 0px;
 
     align-items: center;
     justify-content: center;
@@ -237,6 +237,7 @@ header h1 {
     width: 30px;
     height: 30px;
     border: 2px solid grey;
+    border-radius: 4px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -396,11 +397,50 @@ footer {
   }
 
  
+@media only screen and (min-width:540px) {
+    
+    .card-item {
+        display: flex;
+        flex-direction: row;
+        height: 110px;
+       
+        
+        
+        align-items: center;
+        margin-bottom: 2%;
+        
+    }
 
+    .left-item {
+       
+        height: 100px;
+    }
+
+    .left-item img {
+        width: 130px;
+        height: 100px;
+    }
+
+
+    .right-item {
+        display: flex;
+        height: 100%;
+        
+        margin-right: 20%;
+    }
+
+}
 
 @media only screen
 and (min-device-width: 1024px) {
 
+
+    .deleteall{
+       
+        width: 225px;
+        height: 40px;
+      
+    }
     
     .container{
 
@@ -472,20 +512,24 @@ and (min-device-width: 1024px) {
        
         display: flex;
         flex-direction: row;
-        justify-content: space-b; /* Pour espacer les éléments sur la ligne */
+        justify-content: space-between; /* Pour espacer les éléments sur la ligne */
         align-items: center; 
     }
 
     .total-Button {
+        
         margin-top: 5%;
-        width: 500px;
-        height: 51.9px;
+        
+        width: 225px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
    
 
     #totalPrice{
-        
-        width: 100%;
+        margin-left: 2%;
+        width: 200px;
         
     }
 
