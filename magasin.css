@@ -26,7 +26,7 @@ h1, h2, p, img {
 
 .menu-container {
   visibility: hidden;
-  
+
   height: auto;
   width: 100%;
   display: flex;
@@ -36,17 +36,17 @@ h1, h2, p, img {
 
 .menu-item {
   display: flex;
-  
+
   text-decoration: none;
   align-items: center;
-  
+
   right: 0;
  margin-right: 10%;
   gap: 20%;
-  
-  
+
+
   margin-top: 2%;
-  
+
 
 }
 
@@ -55,7 +55,7 @@ h1, h2, p, img {
   align-items: center;
   text-decoration: none; /* Pour supprimer le soulignement des liens */
   color: black; /* Couleur du texte */
- 
+
 }
 
 .menu-item a img {
@@ -98,7 +98,10 @@ h1, h2, p, img {
 }
 
 button {
-  background-color: white
+  background-color: white;
+  border: solid black 0.5px;
+  width: 30px;
+  height: 30px;
 }
 
 /* card container */
@@ -213,11 +216,12 @@ footer img {
 
 
 @media (min-width: 1024px) {
+
   .card img {
     width:40%;
     min-height: auto;
 
-    
+
   }
   .menu-container{
     visibility: visible;
