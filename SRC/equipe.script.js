@@ -25,6 +25,7 @@ let nameForm = document.getElementById("name-form");
 let posteForm = document.getElementById("poste-form");
 let texteAreaForm = document.getElementById("textarea-form");
 
+let imageForm = document.getElementById("image-profil");
 
 
 let currentCard = null 
@@ -39,10 +40,12 @@ function showFormWithInfo(n, p, d) {
         const nomEmploye  = document.getElementById(n).textContent;
         const posteEmploye = document.getElementById(p).textContent;
         const descriptionEmploye = document.getElementById(d).textContent;
+        const imageEmploye = currentCard.querySelector('.card-img').src;
 
     // Insertion des valeurs dans le formulaire
     nameForm.value = nomEmploye;
     posteForm.value = posteEmploye;
+    imageForm.value = imageEmploye;
     texteAreaForm.value = descriptionEmploye;
 
     formDisplay();
@@ -90,6 +93,7 @@ ctaEdit.addEventListener('click', function(event) {
         currentCard.querySelector('.nom-employe').textContent = nameForm.value;
         currentCard.querySelector('.poste-employe').textContent = posteForm.value;
         currentCard.querySelector('.description-employe').textContent = texteAreaForm.value;
+        currentCard.querySelector('.card-img').src = imageForm.value;
     }
     formHide(); 
 });
