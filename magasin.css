@@ -78,14 +78,14 @@ button {
   background-color: white;
 }
 
-.quantity-controls {
+.quantity-controls { /* flexbox pour aligner les boutons */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .card button, .card span {
-  flex: 1;
+  flex: 1; /* flex 1 pour prendre toute la largeur */
   text-align: center;
   border-radius: 3px;
   font-weight: bold;
@@ -109,28 +109,6 @@ button {
   font-weight: bold;
 }
 
- /* footer style */
-
-footer {
-  margin-top: auto;
-  padding: 20px 0;
-  background-color: #ffffff;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border-top: 1px solid #aaa9a9;
-}
-
-footer a {
-  margin: 0 40px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-footer img {
-  width: 20px;
-}
 
 .last-card {
   margin-bottom: 50px;
@@ -142,6 +120,30 @@ footer img {
   height: 200px;
 }
 
+  /* footer style */
+
+  footer {
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #aaa9a9;
+  }
+
+footer a {
+  margin: 0 40px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer img {
+  width: 20px;
+}
+
+
 
 
 /* Media Query mobile responsive */
@@ -149,12 +151,7 @@ footer img {
   .card {
     width: 40%;
   }
-  .notification {
-    right: 10px; /* Riduci lo spazio ai lati per risparmiare spazio */
-    bottom: 10px;
-    padding: 10px; /* Riduci il padding */
-    font-size: 14px; /* Riduci la dimensione del testo se necessario */
-  }
+
 }
 
 
