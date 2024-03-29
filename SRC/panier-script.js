@@ -52,8 +52,8 @@ function handleQTY(itemId, change) {
     
     const item = stock[itemId]; // Obtenez l'objet de stock correspondant à l'ID de l'article
 
-    const qtyitem = "qty" + itemId.slice(-1);
-    const priceitem = "item" + itemId.slice(-1);
+    const qtyitem = "qty" + itemId.slice(-1); //recupere itemID et prends uniquement le dernier chiffre (string -1)
+    const priceitem = itemId;
 
     document.querySelector(".add").disabled = true; //desactive le bouton le temps que les donnée sont traité
 
@@ -73,7 +73,7 @@ function handleQTY(itemId, change) {
         item.qty = 1;
         document.getElementById(qtyitem).innerHTML = item.qty;
         item.newprice = item.qty * item.price;
-        document.getElementById(priceitem).innerHTML = item.newprice;
+        document.getElementById(priceitem).innerHTML = item.newprice + "€";
         
     }
 
@@ -99,7 +99,7 @@ function handleCheckout() {
 function popshow(){
     var popup = document.querySelector(".popup-container");
     var page = document.querySelector(".container");
-    popup.style.visibility = "visible"; // Correction ici
+    popup.style.visibility = "visible"; 
     page.style.filter = "blur(5px)";
 }
 

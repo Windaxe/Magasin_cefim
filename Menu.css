@@ -14,13 +14,26 @@
     
     text-decoration: none;
     align-items: center;
-    
+    opacity: 50%;
     margin-top: 3%;
     margin-right: 7%;
     
     
-
 }
+
+
+.menu-item img {
+    opacity: 50%;
+}
+
+.menu-item a:hover img {
+    opacity: 200%;
+}
+
+  
+  .other-page {
+    fill: rgb(184, 181, 181);
+  }
 
 .menu-item a {
     display: flex;
