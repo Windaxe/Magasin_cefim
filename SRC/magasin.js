@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   buttons.forEach(function (button) { // Pour chaque bouton
     button.addEventListener('click', function (event) { // On écoute le clic
       const quantitySpan = event.target.closest('.numberjs').querySelector('span');
-      // On récupère le span le plus proche du bouton avec la classe numberjs
+      // On récupère le span le plus proche du bouton avec la classe number
 
       let quantity = parseInt(quantitySpan.textContent,); // On récupère la quantité actuelle
 
