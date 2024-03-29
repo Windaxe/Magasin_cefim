@@ -13,12 +13,26 @@
 
 
 
-    <div class="popup-container">
+    <div class="popup-container" id="deleteAll">
         <div class="popup">
             <h1>Êtes-vous sûre de tout enlever ?</h1>
         <div class="button-container">
             <button id="accept-button" onclick="handleDeleteAll(true)">Oui</button>
             <button id="refuse-button" onclick="handleDeleteAll(false)">Non</button>
+
+        </div>
+        
+
+        </div>
+    </div>
+
+
+    <div class="popup-container" id="deleteOne">
+        <div class="popup">
+            <h1>Êtes-vous sûre d'enlever cette article ?</h1>
+        <div class="button-container">
+            <button id="accept-button">Oui</button>
+            <button id="refuse-button" onclick="">Non</button>
 
         </div>
         
@@ -44,7 +58,7 @@
 
         <header>
         <h1>Panier</h1>
-        <button class="deleteall pagebutton" type="submit" onclick="popshow()"><p>Supprimer le Panier</p></button>
+        <button class="deleteall pagebutton" type="submit" onclick="popshow('deleteAll')"><p>Supprimer le Panier</p></button>
          </header>
 
     <div class="card-container">

@@ -74,6 +74,8 @@ function handleQTY(itemId, change) {
         document.getElementById(qtyitem).innerHTML = item.qty;
         item.newprice = item.qty * item.price;
         document.getElementById(priceitem).innerHTML = item.newprice + "€";
+        deleteone(itemId);
+        
         
     }
 
@@ -96,8 +98,8 @@ function handleCheckout() {
 }
 
 
-function popshow(){
-    var popup = document.querySelector(".popup-container");
+function popshow(element){
+    var popup = document.getElementById(element);
     var page = document.querySelector(".container");
     var menu = document.querySelector(".menu-container");
     popup.style.visibility = "visible"; 
@@ -105,8 +107,34 @@ function popshow(){
     menu.style.filter = "blur(5px)";
 }
 
+
+function deleteone(itemid) { //in progress supprimer uniquement un seul elements
+   popshow("deleteOne")
+
+    popup.style.visibility = "visible"
+    page.style.filter = "blur(5px)";
+    menu.style.filter = "blur(5px)";
+
+
+    const yes = document.getElementById("accept-button").addEventListener("click", () => {
+        //recupere le parents et supprime
+        currentCard = document.getElementById(itemid).closest('.card-container');
+        while (currentCard.firstChild) { 
+            currentCard.removeChild(currentCard.firstChild); 
+          
+        }
+
+
+    });
+    const no = document.getElementById("refuse-button").addEventListener("click", PopHide);
+
+
+
+
+}
+
 function handleDeleteAll(erase){
-    var popup = document.querySelector(".popup-container");
+    var popup = document.getElementById("deleteAll")
     var page = document.querySelector(".container");
     var menu = document.querySelector(".menu-container");
     if(erase)
