@@ -99,13 +99,16 @@ function handleCheckout() {
 function popshow(){
     var popup = document.querySelector(".popup-container");
     var page = document.querySelector(".container");
+    var menu = document.querySelector(".menu-container");
     popup.style.visibility = "visible"; 
     page.style.filter = "blur(5px)";
+    menu.style.filter = "blur(5px)";
 }
 
 function handleDeleteAll(erase){
     var popup = document.querySelector(".popup-container");
     var page = document.querySelector(".container");
+    var menu = document.querySelector(".menu-container");
     if(erase)
     {
         for(const key in stock) {
@@ -117,6 +120,7 @@ function handleDeleteAll(erase){
 
                 popup.style.visibility = "hidden"; 
                 page.style.filter = "blur(0px)";
+                menu.style.filter = "blur(0px)";
             }
     
             
@@ -128,6 +132,7 @@ function handleDeleteAll(erase){
 
         popup.style.visibility = "hidden"; 
         page.style.filter = "blur(0px)";
+        menu.style.filter = "blur(0px)";
     }
     
 }
