@@ -58,7 +58,7 @@ header h1 {
    
     height: 100%;
     width: 100%;
-    
+    margin-left: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +143,7 @@ header h1 {
 }
 
 .card-item {
-    position: relative;
+    
     height: 175px;
     
     display: flex;
@@ -174,9 +174,10 @@ header h1 {
 
 .right-item {
     
+
     width: 75%;
     display: flex;   
-    
+    position: relative;
     text-align: start;
     margin-left: 5%;
     flex-direction: column;
@@ -304,7 +305,11 @@ footer {
 
 
   @media only screen
-  and (max-device-width: 390px) {
+  and (max-device-width: 450px) {
+    .container {
+        width: auto;
+        height: auto;
+    }
     
     .card-item{
         height: 100px;
@@ -361,6 +366,10 @@ footer {
  
 @media only screen and (min-width:540px) {
     
+
+    .container {
+        width: auto;
+    }
     .card-item {
         display: flex;
         flex-direction: row;
